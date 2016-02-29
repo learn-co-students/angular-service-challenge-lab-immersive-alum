@@ -8,10 +8,12 @@
 
 ## Instructions
 
+Run `npm install`, and then run `npm server.js` to start up a local server on port 8080.
+
 Create a service named `SubRedditService`. This will be used to get data from the reddit API.
 
-This should have a method named `getData`, accepting the subreddit name as a paramater. This should use `$http` to make a request to `https://www.reddit.com/r/javascript.json` - replacing `javascript` with the actual subreddit name. Display this data in the view.
+This should have a method named `getData`, accepting the subreddit name as a paramater. This should use `$http` to make a request to `http://localhost:8080/rest/subreddit/javascript` - replacing `javascript` with the actual subreddit name. Display this data in the view.
 
 Create another service named `DomainService`. This will be used to find all the posts on reddit for a certain domain.
 
-This will use the endpoint `https://www.reddit.com/domain/google.co.uk.json`, replacing `google.co.uk` with the domain. Create the appropriate method, and then query the API and display it in the view.
+This will use the endpoint `http://localhost:8080/rest/domain/google.co.uk`, replacing `google.co.uk` with the domain. Create the appropriate method, and then query the API and display it in the view.
