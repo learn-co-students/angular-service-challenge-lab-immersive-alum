@@ -8,7 +8,7 @@
 
 ## Instructions
 
-Run `npm install`, and then run `npm server.js` to start up a local server on port 8080.
+Run `npm install`, and then run `node server.js` to start up a local server on port 8080.
 
 Create a service named `SubRedditService`. This will be used to get data from the reddit API.
 
